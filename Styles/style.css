@@ -68,6 +68,18 @@ nav{
     align-items: center;
     gap: 1rem;
 }
+#logo-text, #nav-text{
+    color: var(--primary-color);
+}
+
+.logo h3{
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--black);
+}
+.logo-text{
+    color: var(--primary-color);
+}
 .nav-items ul{
     display: flex;
     list-style: none;
@@ -381,3 +393,50 @@ nav .ham-burger{
     font-size: 2rem;
 }
 /* Newsletter section styles */
+
+
+/* footer section styles */
+footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.footer-container{
+    max-width: 790px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-container .logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.footer-container .social-icons{
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.footer-container .social-icons .fa-brands{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    padding: 7px;
+    border-radius: 50%;
+    transition: 0.4s ease-in;
+}
+.footer-container .social-icons .fa-brands:hover{
+    padding: 7px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.footer-hr{
+    margin: 3rem 0;
+    border: 1px solid rgba(19, 19, 24, 0.1);
+}
+/* footer section styles */
+
+
