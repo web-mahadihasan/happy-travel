@@ -2,6 +2,9 @@
     .nav-items{
         display: none;
     }
+    .logo h3{
+        font-size: 1.8rem;
+    }
     nav .ham-burger{
     display: block;
     }
