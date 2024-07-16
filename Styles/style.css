@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+/* Variables  */
+:root{
+    --primary-color: rgb(255, 84, 0);
+    --secondary-color: rgba(19, 19, 24, 0.7);
+    --primary-font: 1rem;
+    --white: rgb(255, 255, 255);
+    --black:rgb(19, 19, 24);
+}
+/* Variables  */
+/* Shared Styles  */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 1.5rem;
+}
+section{
+    margin: 100px 0;
+}
+.btn-primary{
+    padding: 0.875rem 1.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+.section-title{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+.section-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    line-height: 1.625rem;
+    margin-bottom: 1.5rem;
+}
+.section-subtitle{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+/* Shared Styles  */
+
+/* nav styles  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-items ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2.75rem;
+}
+
+.nav-items .nav-links{
+    text-decoration: none;
+    color: rgb(66, 66, 71);
+    font-weight: 400px;
+    font-size: 1.125rem;
+}
+nav .ham-burger{
+    font-size: 1.5rem;
+    display: none;
+}
+/* nav styles  */
+
+/* banner section styles */
+.banner-container{
+    background-image:linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url(../Images/banner-bg.png);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content{
+    text-align: center;
+    padding: 1.5rem;
+}
+.banner-content h3{
+    font-weight: 800;
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+.banner-content p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--white);
+    max-width: 676px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.banner-input-container{
+    display: flex;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(1px);
+    padding: 1rem;
+    border-radius: .5rem;
+    
+}
+.banner-content input, select{
+    border: none;
+    outline: none;
+    height: 3rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 170px;
+    color: rgba(19, 19, 24, 0.5);
+    cursor: pointer;
+}
+.banner-content .btn-primary{
+    font-size: 1rem;
+}
+.btn-primary i{
+    margin-right: .5rem;
+    
+}
+/* banner section styles */
+
+
+/* --Popular Tours section styles --   */
+.popular-tour-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 3.125rem;
+}
+
+.popular-tour-content ul li{
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    text-indent: -20px;
+    list-style: inside;
+    text-align: left;
+}
+.popular-tour-img img{
+    width: 100%;
+}
+
+/* Destination section styles  */
+.destination-container{
+    text-align: center;
+}
+.destination-container > .section-description,
+.choose-us-container > .section-description,
+.discount-container > .section-description
+{
+    margin-bottom: 3rem;
+}
+
+.country-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.country-card img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+}
+.country-card{
+    position: relative;
+    height: 300px;
+}
+.country-card .country-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1.625rem;
+}
+.country-container .card-1{
+    grid-column: span 6;
+}
+.country-container .card-2{
+    grid-column: span 6;
+}
+.country-container .card-3{
+    grid-column: span 4;
+}
+.country-container .card-4{
+    grid-column: span 5;
+}
+.country-container .card-5{
+    grid-column: span 3;
+}
+.country-container .card-6{
+    grid-column: span 5;
+}
+.country-container .card-7{
+    grid-column: span 7;
+}
+/* Destination section styles  */
+
+
+/* Why choose us section styles  */
+.choose-us-container{
+    text-align: center;
+}
+.choose-card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.choose-card-container .choose-card{
+    padding: 2rem;
+    text-align: left;
+    border-radius: .5rem;
+}
+.choose-card-container .card-1{
+    grid-column: span 6;
+    background-color: rgba(251, 181, 99, 0.05);
+}
+.choose-card-container .card-2{
+    grid-column: span 6;
+    background-color: rgba(41, 206, 246, 0.05);
+}
+.choose-card-container .card-3{
+    grid-column:  4/10 ;
+    background-color: rgba(233, 68, 68, 0.05);
+}
+.choose-card img{
+    margin-bottom: 2rem;
+}
+/* Why choose us section styles  */
+
+/* Deals and discount styles  */
+.discount-container{
+    text-align: center;
+}
+.deals-container{
+    background-image: url(../Images/discount-1.png);
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3.125rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+.discount-container .deals-2{
+    background-image: url(../Images/discount-2.png);
+    justify-content: flex-start;
+}
+.deals-container .deals-card{
+    padding: 3.125rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 580px;
+    text-align: left;
+    border-radius: .5rem;
+    backdrop-filter: blur(5px);
+}
+.deals-card .deals-info{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.625rem;
+}
+.deals-card .deals-info .fa-solid{
+    margin-right: .4rem;
+    color: var(--primary-color);
+}
+.deals-card .price{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+/* Deals and discount styles  */
+
+
+/* simple perfect place styles  */
+.simple-perfect-place{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.625rem;
+}
+
+.perfect-place-img iframe{
+    width: 100%;
+    height: 424px;
+    border: none;
+    border-radius: .5rem;
+}
+
+.perfect-place-content li{
+    margin-bottom: 1rem;
+    list-style: inside;
+    text-indent: -20px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+/* simple perfect place styles  */
+
+/* Newsletter section styles */
+.newsletter-container{
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 1.5rem;
+}
+.newsletter-img{
+    position: relative;
+}
+.newsletter-img img{
+    height: 422px;
+    width: 100%;
+}
+.newsletter-content{
+    padding: 2.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+}
+.subscribe input{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    height: 3.125rem;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    background-color: rgba(19, 19, 24, 0.05);
+}
+.subscribe button{
+    margin-top: 1.5rem;
+    width: 100%;
+}
+.newsletter-img .discount-card{
+    max-width: 324px;
+    position: absolute;
+    right: 2%;
+    top: 60%;
+    transform: rotate(-20deg);
+    text-align: center;
+    padding: 1.5rem;
+}
+.newsletter-img .discount-card p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.newsletter-img .discount-card h3{
+    color: var(--white);
+    font-weight: 800;
+    font-size: 2rem;
+}
+/* Newsletter section styles */

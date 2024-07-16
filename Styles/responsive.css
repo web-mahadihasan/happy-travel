@@ -1,0 +1,59 @@
+@media screen and (max-width: 576px) {
+    .nav-items{
+        display: none;
+    }
+    nav .ham-burger{
+    display: block;
+    }
+    .banner-container{
+        height: auto;
+    }
+    .banner-content h3, .section-title{
+        font-size: 1.8rem;
+    }
+    .banner-input-container{
+        flex-direction: column;
+    }
+    .banner-content input, select{
+        width: 100%;
+    }
+    .popular-tour-container{
+        grid-template-columns: 1fr;
+    }
+    .country-container, .choose-card-container,
+    .simple-perfect-place,
+    .newsletter-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .country-container .country-card, .choose-card-container .choose-card{
+        grid-column: span 1 /-1;
+    }
+    .deals-container{
+        height: 500px;
+        padding: 1.5rem;
+        align-items: flex-end;
+    }
+    .deals-container .deals-card{
+        /* width: 90%; */
+        padding: 1.5rem;
+    }
+    .deals-card .deals-info{
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    .deals-card .section-subtitle{
+        margin-bottom: 0.5rem;
+    }
+    .deals-card .price{
+        margin-bottom: .8rem;
+    }
+     .deals-card .section-description{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 90%;
+        height: 48px;
+     }
+     .simple-perfect-place{
+
+     }
+}
