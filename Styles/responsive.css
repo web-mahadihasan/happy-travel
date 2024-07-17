@@ -60,3 +60,110 @@
 
      }
 }
+
+/* Device min width 576px and max width 768px */
+
+
+@media screen and (min-width: 576px){
+    .nav-items{
+        display: none;
+    }
+    .logo h3{
+        font-size: 1.8rem;
+    }
+    nav .ham-burger{
+    display: block;
+    }
+    .banner-container{
+        height: auto;
+    }
+    .banner-input-container{
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .banner-content input, select{
+        width: 100%;
+    }
+    .banner-content h3, .section-title{
+        font-size: 2.5rem;
+    }
+    .popular-tour-container{
+        grid-template-columns: 1fr;
+    }
+    .choose-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .choose-card-container .choose-card{
+        grid-column: span 1 /-1;
+    }
+     .deals-container{
+        padding: 1.5rem;
+     }
+     .deals-container .deals-card{
+        padding: 1.5rem;
+    }
+    .deals-card .deals-info{
+        margin-bottom: 1rem;
+    }
+    .deals-card .section-subtitle{
+        margin-bottom: .8remrem;
+    }
+    .deals-card .price{
+        margin-bottom: 1rem;
+    }
+    .newsletter-container{
+            grid-template-columns: 0.9fr 1.1fr;
+    }
+}
+
+/* Device min width 769px  */
+
+@media screen and (min-width: 769px) {
+    .nav-items{
+        display: block;
+    }
+    .logo h3{
+        font-size: 1.8rem;
+    }
+    nav .ham-burger{
+    display: none;
+    }
+    .nav-items ul{
+        gap: 2rem;
+    }
+    .banner-container{
+        height: 500px;
+    }
+    .banner-input-container{
+        flex-direction: row;
+        width: 100%;
+    }    
+    .banner-content input, select{
+         width: 170px;
+    }
+    .popular-tour-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .popular-tour-img img{
+        height: 100%;
+    }
+    .choose-card-container{
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .choose-card-container .card-1{
+    grid-column: span 6;
+    }
+    .choose-card-container .card-2{
+    grid-column: span 6;
+    }
+    .choose-card-container .card-3{
+    grid-column:  4/10 ;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-items ul{
+        gap: 2.75rem;
+    }
+}
